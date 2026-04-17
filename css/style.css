@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Ultra:regular);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 0 clamp(1rem, 9vw, 8.4rem);
+}
+
+
+
+
+
+/* HEADER */
+header {
+    background-color: #fff;
+    border: 1px solid blue;
+    /* padding: 0rem 135px;  */
+    /* padding: 0 clamp(1rem, 9vw, 8.4rem); */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 89px; */
+    height: clamp(3rem, 6vw, 5.6rem);
+}
+
+nav,
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    gap: clamp(12px, 4vw, 72px);
+}
+
+.logo {
+    font-family: Ultra;
+    font-weight: 700;
+    /* font-size: 40px; */
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.menu li {
+    list-style: none;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    color: #000;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.contact-btn {
+    /* width: 138px;
+    height: 48px;  */
+    padding: clamp(6px, 2vw, 12px) clamp(12px, 4vw, 24px);
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+
+
+
+
+/* HERO */
+.hero{
+    background: #E7D4BE70;
+}
