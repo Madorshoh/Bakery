@@ -10,9 +10,6 @@
 .container{
     max-width: 1440px;
     margin: 0 auto;
-    box-shadow: 0px 0px 10px grey;
-}
-.bakery-container {
     padding: 0 clamp(1rem, 9vw, 8.4rem);
 }
 
@@ -20,8 +17,9 @@
 
 
 
+
 /* HEADER */
-.navbar {
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +29,7 @@
 }
 
 nav,
-.menu {
+.nav__list {
     display: flex;
     align-items: center;
     /* gap: 72px; */
@@ -49,7 +47,7 @@ nav,
     cursor: pointer;
 }
 
-.menu li {
+.nav__list li {
     list-style: none;
     font-family: DM Sans;
     font-weight: 400;
@@ -57,11 +55,11 @@ nav,
     color: #000;
 }
 
-.menu li a {
+.nav__list li a {
     text-decoration: none;
 }
 
-.contact-btn {
+.btn {
     /* width: 138px;
     height: 48px;  */
     padding: clamp(6px, 2vw, 12px) clamp(12px, 4vw, 24px);
@@ -81,7 +79,7 @@ nav,
 
 
 /* HERO */
-.hero-content {
+.hero__wrapper {
     background-color: #E7D4BE70;
     display: flex;
     justify-content: space-between;
@@ -89,18 +87,18 @@ nav,
     position: relative;
 }
 
-.hero-left-img {
+.hero__decor {
     position: absolute;
     left: 0;
     width: clamp(40px, 11vw, 266px);
 }
 
-.hero-text {
+.hero__info{
     padding-left: clamp(1rem, 9vw, 8.4rem);
     padding-top: clamp(1rem, 9vw, 10rem);
 }
 
-.hero-subtitle {
+.hero__subtitle {
     font-family: Oswald;
     font-weight: 400;
     /* font-size: 16px; */
@@ -110,7 +108,7 @@ nav,
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-.hero-img-shape{
+.hero__shape{
     margin-left: 320px;
     margin-left: clamp(60px, 18vw, 360px);
     margin-bottom: 25px;
@@ -118,7 +116,7 @@ nav,
     width: 10%;
 }
 
-.hero-title {
+.hero__title {
     font-family: Ultra;
     font-weight: 400;
     font-size: 72px;
@@ -129,7 +127,7 @@ nav,
     margin: -60px 0px 27px 0px;
 }
 
-.hero-info {
+.hero__text {
     font-family: DM Sans;
     font-weight: 400;
     font-size: 20px;
@@ -138,7 +136,7 @@ nav,
     letter-spacing: 0px;
 }
 
-.hero-right-img{
+.hero__img{
     display: block;
     max-width: 100%;
     height: auto;
@@ -146,3 +144,6 @@ nav,
 
 
 /* ABOUT US*/
+.about-content{
+    padding-top: 160px;
+}
