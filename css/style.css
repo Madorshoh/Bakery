@@ -92,6 +92,7 @@ nav,
 .hero-left-img {
     position: absolute;
     left: 0;
+    width: clamp(40px, 11vw, 266px);
 }
 
 .hero-text {
@@ -109,11 +110,13 @@ nav,
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-/* .hero-shape{
-    position: absolute;
-    left: 401px;
-    top: 173px;
-} */
+.hero-img-shape{
+    margin-left: 320px;
+    margin-left: clamp(60px, 18vw, 360px);
+    margin-bottom: 25px;
+    margin-bottom: clamp(1px, 4vw, 30px);
+    width: 10%;
+}
 
 .hero-title {
     font-family: Ultra;
@@ -130,6 +133,7 @@ nav,
     font-family: DM Sans;
     font-weight: 400;
     font-size: 20px;
+    font-size: clamp(10px, 2vw, 20px);
     line-height: 32px;
     letter-spacing: 0px;
 }
