@@ -7,7 +7,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 clamp(1rem, 9vw, 8.4rem);
@@ -84,18 +85,19 @@ nav,
     display: flex;
     justify-content: space-between;
     padding: 0px;
-    position: relative;
 }
 
-.hero__decor {
-    position: absolute;
-    left: 0;
-    width: clamp(40px, 11vw, 266px);
+.hero__content {
+    display: flex;
 }
 
-.hero__info{
-    padding-left: clamp(1rem, 9vw, 8.4rem);
-    padding-top: clamp(1rem, 9vw, 10rem);
+.hero__decor-img{
+    width: clamp(10px, 8.1vw, 134px);
+}
+
+.hero__info {
+    padding-top: clamp(30px, 7vw, 110px);
+    transform: translateX(-50px);
 }
 
 .hero__subtitle {
@@ -109,22 +111,19 @@ nav,
     text-transform: uppercase;
 }
 .hero__shape{
-    margin-left: 320px;
-    margin-left: clamp(60px, 18vw, 360px);
-    margin-bottom: 25px;
-    margin-bottom: clamp(1px, 4vw, 30px);
-    width: 10%;
+    width: clamp(10px, 3.5vw, 64px);
+    height: auto;
 }
 
 .hero__title {
     font-family: Ultra;
     font-weight: 400;
     font-size: 72px;
-    font-size: clamp(1rem, 4.5vw, 6rem);
+    font-size: clamp(1rem, 4.5vw, 4.5rem);
     line-height: 80px;
-    line-height: clamp(1rem, 5vw, 6rem);
+    line-height: clamp(1rem, 4.5vw, 4.5rem);
     letter-spacing: 0px;
-    margin: -60px 0px 27px 0px;
+    padding-bottom: clamp(10px,2vw, 27px);
 }
 
 .hero__text {
@@ -132,11 +131,11 @@ nav,
     font-weight: 400;
     font-size: 20px;
     font-size: clamp(10px, 2vw, 20px);
-    line-height: 32px;
+    line-height: clamp(10px, 2vw, 32px);
     letter-spacing: 0px;
 }
 
-.hero__img{
+.hero__img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -144,6 +143,34 @@ nav,
 
 
 /* ABOUT US*/
-.about__wrapper{
+.about__wrapper {
     border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__image-box {
+    display: flex;
+    width: 50%;
+    padding-top: 160px;
+}
+
+.about__image-box div {
+    border: 1px solid red;
+}
+
+.bitmap {
+    z-index: 2;
+}
+
+.bitmap2 {
+    transform: translate(70px, -85px);
+}
+
+.shape {
+    transform: translate(-350px, 120px);
+}
+
+.about__content {
+    width: 50%;
 }
