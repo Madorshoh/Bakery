@@ -86,7 +86,7 @@ nav,
 
 .hero__content {
     display: flex;
-    
+
 }
 
 .hero__decor-img {
@@ -145,14 +145,17 @@ nav,
     padding: 0;
     padding-top: 160px;
 }
+
 .about__image {
     transform: translateX(58px);
 }
 
-.about__info{
+.about__info {
     width: 705px;
+    padding-right: 135px;
 }
-.about__info-subtitle{
+
+.about__info-subtitle {
     font-family: Oswald;
     font-weight: 400;
     font-size: 16px;
@@ -161,7 +164,7 @@ nav,
     text-transform: uppercase;
 }
 
-.about__info-title{
+.about__info-title {
     font-family: Ultra;
     font-weight: 700;
     font-size: 56px;
@@ -170,20 +173,21 @@ nav,
     margin-top: 16px;
 }
 
-.about__info-pagination{
-    display: grid;
-    grid-template-columns: 1fr 100%;
+.about__info-pagination {
+    display: flex;
+    align-items: flex-start;
     gap: 32px;
     padding-top: 59px;
 }
 
-.pagination-btn{
+.pagination__btn {
     margin-top: 23px;
     display: grid;
     gap: 8px;
 }
 
-.pagination__prev,.pagination__back{
+.pagination__prev,
+.pagination__back {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -191,5 +195,153 @@ nav,
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    border: none;
 }
 
+.pagination__prev:active,
+.pagination__back:active {
+    background-color: #171B1B;
+}
+
+.page__num {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #171B1B;
+}
+
+.page__title {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #171B1B;
+    padding: 12px 0px 22px 0px;
+}
+
+.page__text {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #3333337F;
+}
+
+.page__list {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    list-style: none;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+
+
+/* OUR FEATURES */
+
+.features__wrapper{
+    margin-top: 100px;
+}
+
+.features__subtitle {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.features__title {
+    font-family: Ultra;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 18px 0px 53px 0px;
+}
+
+.features__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features__card {
+    width: 400px;
+    height: 384px;
+}
+
+.features__card {
+    padding: 51px 32px 0px 32px;
+    position: relative;
+}
+
+.features__card:first-child {
+    padding: 56px 30px 0px 64px;
+}
+
+.features__card:last-child {
+    height: 416px;
+    background-color: #F9BF77;
+    padding: 72px 32px 0px 62px;
+}
+
+.features__card-title {
+    font-family: Ultra;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: #171B1B;
+    padding-bottom: 18px;
+}
+
+.features__card-text {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #3333337F;
+}
+
+.features__card:first-child img {
+    padding-bottom: 58px;
+}
+
+.features__card img {
+    padding-bottom: 50px;
+}
+
+.features__card:last-child img {
+    padding-bottom: 50px;
+}
+
+.features__card-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+/* OUR VIDEO */
